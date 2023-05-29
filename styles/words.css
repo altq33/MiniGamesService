@@ -1,0 +1,122 @@
+.game-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.game-wrapper {
+  width: 400px;
+  background-color: #1c1c33;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.game-wrapper h2 {
+  font-size: 22px;
+  text-align: center;
+  font-weight: 500;
+  border-bottom: 2px solid #ccc;
+  margin: 0 20px;
+  padding: 20px 25px;
+}
+
+.game-wrapper .content {
+  margin: 25px 25px 30px;
+}
+
+.content .word {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.word input {
+  height: 51px;
+  width: 50px;
+  margin: 4px;
+  color: #57d9a6;
+  border: 1px solid #b5b5b5;
+  background: none;
+  text-align: center;
+  border-radius: 10px;
+  text-transform: uppercase;
+  pointer-events: none;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.type-input {
+  z-index: -999;
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.word input:first-child {
+  margin-left: 0;
+}
+
+.content .info {
+  margin: 20px 0;
+}
+
+.info p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reset,
+.showhint {
+  width: 48%;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  padding: 10px 0;
+  font-size: 17px;
+  background-color: #57d9a6;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.reset:hover,
+.showhint:hover {
+  background-color: #31c187;
+}
+
+@media (max-width: 450px) {
+  .game-wrapper {
+    width: 100%;
+  }
+
+  .game-wrapper h1 {
+    font-size: 20px;
+    padding: 16px 20px;
+  }
+
+  .content {
+    margin: 25px 20px 30px;
+  }
+
+  .word input {
+    height: 46px;
+    width: 45px;
+    margin: 3px;
+    font-size: 19px;
+  }
+
+  .info p {
+    font-size: 15px;
+  }
+
+  .reset {
+    padding: 9px 0;
+    font-size: 15px;
+  }
+}

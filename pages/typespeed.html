@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Скорость печати</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/typetest.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header id="header">
+        <div class="fixed-container">
+          <div class="header-content">
+            <a href="/" class="logo">MiniGames</a>
+            <nav class="menu">
+              <ul class="menu-list">
+                <li class="menu-list-item">
+                  <a href="/pages/words.html">Слова</a>
+                </li>
+                <li class="menu-list-item">
+                  <a href="/pages/typespeed.html">Скорость печати</a>
+                </li>
+                <li class="menu-list-item">
+                  <a href="/pages/gradient.html">Градиент</a>
+                </li>
+              </ul>
+            </nav>
+            <a href="/pages/profile.html" class="profile-link"></a>
+          </div>
+        </div>
+      </header>
+      <main id="main">
+        <div class="fixed-container">
+          <div class="test-container">
+            <div class="container">
+              <div class="stats">
+                <p>Время: <span id="timer">0с</span></p>
+                <p>Ошибки: <span id="mistakes">0</span></p>
+              </div>
+              <div id="quote"></div>
+
+              <textarea
+                id="quote-input"
+                placeholder="Печатайте здесь когда тест начнется..."
+              ></textarea>
+
+              <button id="start-test" class="test-button" onclick="startTest()">
+                Начать тест
+              </button>
+              <button
+                id="stop-test"
+                class="test-button"
+                onclick="displayResult()"
+              >
+                Завершить тест
+              </button>
+
+              <div class="result">
+                <h3>Результат</h3>
+                <div class="test-wrapper">
+                  <p>Точность: <span id="accuracy"></span></p>
+                  <p>Скорость: <span id="wpm"></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="/scripts/quotes.js"></script>
+    <script src="/scripts/typetest.js"></script>
+  </body>
+</html>

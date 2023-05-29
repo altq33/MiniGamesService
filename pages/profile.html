@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Профиль</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/profile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header id="header">
+        <div class="fixed-container">
+          <div class="header-content">
+            <a href="/" class="logo">MiniGames</a>
+            <nav class="menu">
+              <ul class="menu-list">
+                <li class="menu-list-item">
+                  <a href="/pages/words.html">Слова</a>
+                </li>
+                <li class="menu-list-item">
+                  <a href="/pages/typespeed.html">Скорость печати</a>
+                </li>
+                <li class="menu-list-item">
+                  <a href="/pages/gradient.html">Градиент</a>
+                </li>
+              </ul>
+            </nav>
+            <a href="/pages/profile.html" class="profile-link"></a>
+          </div>
+        </div>
+      </header>
+      <main id="main">
+        <div class="fixed-container">
+          <div class="profile-container">
+            <div class="profile-wrap">
+              <h2>Рекорды</h2>
+              <div class="words stat">
+                Количество угаданных слов: <span></span>
+              </div>
+              <div class="gradient stat">
+                Последний выбранный градиент: <span></span>
+              </div>
+              <div class="type stat">
+                Лучшая скорость печати: <span></span>wpm
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="/scripts/profile.js"></script>
+  </body>
+</html>
